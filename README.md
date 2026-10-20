@@ -14,7 +14,7 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.6-win-x64.zip` をダウンロードして展開します。
 3. `DiskHeatMap.exe` を起動し、フォルダーやドライブを選んで「スキャン」。エクスプローラーからフォルダーまたはドライブ1件をドロップしても開始できます。
 
-ランタイム非同梱の単一EXEです。ZIPには日本語の「使い方.txt」と、画像を内蔵したオフラインの「使い方.html」が入っています。インストーラーや常駐サービスはありません。
+ランタイム非同梱の単一EXEです。ZIPにはEXEと日本語の「使い方.html」が入っています。使い方は、基本の4ステップから読める一列のHTMLです。[使い方HTMLを単体で保存](https://github.com/mezon-web/DiskHeatMap-Releases/raw/refs/heads/main/manual.html)して、オフラインでも読めます。インストーラーや常駐サービスはありません。
 
 「管理者権限」は起動時ONで、ローカル対象のスキャン開始時にUACの確認が出ます。通常権限で使う場合はOFFにしてください。ネットワーク先は通常権限で計測し、チェックを一時的に無効化します。画面と削除操作の権限は上げません。管理者スキャンは同じWindowsユーザーの昇格に対応します。
 

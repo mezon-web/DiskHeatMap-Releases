@@ -18,9 +18,11 @@ Windows SMBの専用データで、UNCの入力・ドロップ・割り当てド
 
 **必要環境:** Windows 11 x64 / .NET 10 Desktop Runtime x64（非同梱）。日本語UI・オフライン計測。
 
-- `DiskHeatMap-v0.1.6-win-x64.zip`：単一EXEと日本語の使い方（HTML/TXT）。
+- `DiskHeatMap-v0.1.6-win-x64.zip`：単一EXEと日本語の使い方（HTML）。
 - `DiskHeatMap-v0.1.6-win-x64.zip.sha256.txt`：上記ZIPだけのSHA-256。
 
 更新時はアプリを終了し、既存の `DiskHeatMap.settings.json` を残してEXEと使い方を置き換えてください。管理者チェックは起動ごとにONへ戻ります。
+
+使い方はHTML一本です。基本の4ステップ、主要操作、困ったときを先にまとめました。[使い方HTMLを単体で保存](https://github.com/mezon-web/DiskHeatMap-Releases/raw/refs/heads/main/manual.html)して、オフラインでも読めます。
 
 GitHubが自動生成する**「Source code」は公開資料リポジトリの内容**で、アプリ本体やアプリケーションのソースコードではありません。アプリは `win-x64.zip` をダウンロードしてください。

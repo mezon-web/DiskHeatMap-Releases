@@ -12,7 +12,7 @@ Get-FileHash -LiteralPath .\DiskHeatMap-v0.1.6-win-x64.zip -Algorithm SHA256
 Get-Content -LiteralPath .\DiskHeatMap-v0.1.6-win-x64.zip.sha256.txt
 ```
 
-両方の64桁の値が一致することを確認してください。大文字・小文字の違いは問題ありません。ZIPを展開し、`DiskHeatMap.exe` を起動します。日本語の使い方も同梱しています。
+両方の64桁の値が一致することを確認してください。大文字・小文字の違いは問題ありません。ZIPを展開し、`DiskHeatMap.exe` を起動します。同梱する使い方は `使い方.html` の1つです。[使い方HTMLを単体で保存](https://github.com/mezon-web/DiskHeatMap-Releases/raw/refs/heads/main/manual.html)することもできます。
 
 必要環境はWindows 11 x64と.NET 10 **Desktop** Runtime x64です。ランタイムは同梱していません。Microsoftの [公式ページ](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0) から入手できます。
 
