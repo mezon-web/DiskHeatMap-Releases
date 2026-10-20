@@ -11,7 +11,7 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 ## 使い始める
 
 1. Windows 11 x64で、**.NET 10 Desktop Runtime x64**を用意します。[Microsoftのダウンロードページ](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0) の「.NET Desktop Runtime」を選んでください。
-2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.3-win-x64.zip` をダウンロードして展開します。
+2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.4-win-x64.zip` をダウンロードして展開します。
 3. `DiskHeatMap.exe` を起動し、フォルダーやドライブを選んで「スキャン」。エクスプローラーからフォルダーまたはドライブ1件をドロップしても開始できます。
 
 ランタイム非同梱の単一EXEです。ZIPには日本語の「使い方.txt」と、画像を内蔵したオフラインの「使い方.html」が入っています。インストーラーや常駐サービスはありません。
@@ -36,6 +36,10 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 完全削除はごみ箱から戻せません。一括削除、スキャン起点やドライブ自体の削除には対応しません。フォルダーの配下にあるジャンクション等は参照先に入らず、リンク自体だけを対象にします。途中失敗で一部が削除済みの場合は再スキャンを案内します。
 
 スキャンはメタデータを調べ、読めない場所・未走査・リンクの除外を区別します。管理者でも全項目を読めるとは限りません。スキャン後の外部変更は、再スキャンで取得します。HDDや別PCでの速度改善率は未検証です。
+
+## v0.1.4の改善
+
+途中集計・差分送信・名前とパスの検索を軽量化しました。同一PCの模擬データで、20万件の途中集計が601→101ms、100万件の該当なし検索が57→12msでした。実ファイルのスキャン全体の短縮は小さく、この数値はHDDや他PCの性能を示すものではありません。[公開内容と計測条件](RELEASE.md)
 
 ## 「システム・未分類」の内訳
 
@@ -63,4 +67,4 @@ OneDrive実環境では読み取り専用のスキャンを確認しています
 - **`DiskHeatMap-vX.Y.Z-win-x64.zip.sha256.txt`** は、そのZIP専用のSHA-256です。照合方法は [DOWNLOAD.md](DOWNLOAD.md) を参照してください。
 - GitHubが自動生成する **「Source code (zip)」「Source code (tar.gz)」は、この公開資料リポジトリの内容**です。アプリ本体やアプリのソースコードではありません。
 
-[変更履歴](CHANGELOG.md) · [v0.1.3の公開内容](RELEASE.md)
+[変更履歴](CHANGELOG.md) · [v0.1.4の公開内容](RELEASE.md)

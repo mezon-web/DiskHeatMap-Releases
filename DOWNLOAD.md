@@ -2,14 +2,14 @@
 
 [GitHub Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases/latest) から、同じ版の以下2ファイルをダウンロードしてください。
 
-- `DiskHeatMap-v0.1.3-win-x64.zip`
-- `DiskHeatMap-v0.1.3-win-x64.zip.sha256.txt`
+- `DiskHeatMap-v0.1.4-win-x64.zip`
+- `DiskHeatMap-v0.1.4-win-x64.zip.sha256.txt`
 
 PowerShellでZIPのSHA-256を計算します。
 
 ```powershell
-Get-FileHash -LiteralPath .\DiskHeatMap-v0.1.3-win-x64.zip -Algorithm SHA256
-Get-Content -LiteralPath .\DiskHeatMap-v0.1.3-win-x64.zip.sha256.txt
+Get-FileHash -LiteralPath .\DiskHeatMap-v0.1.4-win-x64.zip -Algorithm SHA256
+Get-Content -LiteralPath .\DiskHeatMap-v0.1.4-win-x64.zip.sha256.txt
 ```
 
 両方の64桁の値が一致することを確認してください。大文字・小文字の違いは問題ありません。ZIPを展開し、`DiskHeatMap.exe` を起動します。日本語の使い方も同梱しています。
