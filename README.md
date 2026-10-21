@@ -11,7 +11,7 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 ## 使い始める
 
 1. Windows 11 x64で、**.NET 10 Desktop Runtime x64**を用意します。[Microsoftのダウンロードページ](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0) の「.NET Desktop Runtime」を選んでください。
-2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.6-win-x64.zip` をダウンロードして展開します。
+2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.7-win-x64.zip` をダウンロードして展開します。
 3. `DiskHeatMap.exe` を起動し、フォルダーやドライブを選んで「スキャン」。エクスプローラーからフォルダーまたはドライブ1件をドロップしても開始できます。
 
 ランタイム非同梱の単一EXEです。ZIPにはEXEと日本語の「使い方.html」が入っています。使い方は、基本の4ステップから読める一列のHTMLです。[使い方HTMLを単体で保存](https://github.com/mezon-web/DiskHeatMap-Releases/raw/refs/heads/main/manual.html)して、オフラインでも読めます。インストーラーや常駐サービスはありません。
@@ -37,9 +37,11 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 
 スキャンはメタデータを調べ、読めない場所・未走査・リンクの除外を区別します。管理者でも全項目を読めるとは限りません。スキャン後の外部変更は、再スキャンで取得します。HDDや別PCでの速度改善率は未検証です。
 
-## v0.1.6の改善
+## v0.1.7の改善
 
-UNCと割り当て済みネットワークドライブの計測・完全削除に対応しました。共有内フォルダーのドロップ、拡張UNC、区切り文字の違いを扱い、容量取得には共有パスを受け付けるWindows APIを使います。フォルダー指定時の上部表示も整理しました。[公開内容と検証範囲](RELEASE.md)
+ネットワーク共有のファイル情報を最大4件並行して取得し、応答に応じて処理数を調整します。共有先が対応しない一部の問い合わせも繰り返さず、待ち時間を減らします。アクセス拒否や一時的な失敗は、共有先の非対応として扱いません。
+
+同じPC上のWindows SMB共有で、1,131項目・各5回の中央値はv0.1.6比で約20%短縮しました。実NASの改善率は未測定で、速度は共有先・回線・ファイル構成に依存します。[公開内容と検証範囲](RELEASE.md)
 
 ## ネットワーク共有とフォルダー使用量
 
@@ -79,4 +81,4 @@ OneDrive実環境では読み取り専用のスキャンを確認しています
 - **`DiskHeatMap-vX.Y.Z-win-x64.zip.sha256.txt`** は、そのZIP専用のSHA-256です。照合方法は [DOWNLOAD.md](DOWNLOAD.md) を参照してください。
 - GitHubが自動生成する **「Source code (zip)」「Source code (tar.gz)」は、この公開資料リポジトリの内容**です。アプリ本体やアプリのソースコードではありません。
 
-[変更履歴](CHANGELOG.md) · [v0.1.6の公開内容](RELEASE.md)
+[変更履歴](CHANGELOG.md) · [v0.1.7の公開内容](RELEASE.md)
