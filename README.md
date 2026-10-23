@@ -11,8 +11,8 @@ Windows用のディスク使用量ヒートマップです。容量の大きい�
 ## 使い始める
 
 1. Windows 11 x64で、**.NET 10 Desktop Runtime x64**を用意します。[Microsoftのダウンロードページ](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0) の「.NET Desktop Runtime」を選んでください。
-2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.7-win-x64.zip` をダウンロードして展開します。
-3. `DiskHeatMap.exe` を起動し、フォルダーやドライブを選んで「スキャン」。エクスプローラーからフォルダーまたはドライブ1件をドロップしても開始できます。
+2. [Releases](https://github.com/mezon-web/DiskHeatMap-Releases/releases) の `DiskHeatMap-v0.1.7.zip` をダウンロードして展開します。
+3. 展開された `DiskHeatMap-v0.1.7` フォルダー内の `DiskHeatMap.exe` を起動し、フォルダーやドライブを選んで「スキャン」。エクスプローラーからフォルダーまたはドライブ1件をドロップしても開始できます。
 
 ランタイム非同梱の単一EXEです。ZIPにはEXEと日本語の「使い方.html」が入っています。使い方は、基本の4ステップから読める一列のHTMLです。[使い方HTMLを単体で保存](https://github.com/mezon-web/DiskHeatMap-Releases/raw/refs/heads/main/manual.html)して、オフラインでも読めます。インストーラーや常駐サービスはありません。
 
@@ -77,8 +77,8 @@ OneDrive実環境では読み取り専用のスキャンを確認しています
 
 このリポジトリでは配布物と利用案内を公開しています。
 
-- アプリ本体はRelease Assetsの **`DiskHeatMap-vX.Y.Z-win-x64.zip`** です。
-- **`DiskHeatMap-vX.Y.Z-win-x64.zip.sha256.txt`** は、そのZIP専用のSHA-256です。照合方法は [DOWNLOAD.md](DOWNLOAD.md) を参照してください。
+- アプリ本体はRelease Assetsの **`DiskHeatMap-vX.Y.Z.zip`** です。
+- **`DiskHeatMap-vX.Y.Z.zip.sha256.txt`** は、そのZIP専用のSHA-256です。照合方法は [DOWNLOAD.md](DOWNLOAD.md) を参照してください。
 - GitHubが自動生成する **「Source code (zip)」「Source code (tar.gz)」は、この公開資料リポジトリの内容**です。アプリ本体やアプリのソースコードではありません。
 
 [変更履歴](CHANGELOG.md) · [v0.1.7の公開内容](RELEASE.md)
