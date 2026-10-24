@@ -1,3 +1,4 @@
 * text=auto
 *.md text eol=lf
 *.png binary
+manual.html -text whitespace=cr-at-eol
